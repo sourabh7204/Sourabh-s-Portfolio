@@ -1,7 +1,7 @@
 import React from "react";
-import ReactTypingEffect from "react-typing-effect";
+import { Typewriter } from "react-simple-typewriter";
 import Tilt from "react-parallax-tilt";
-import profileImage from "../../assets/profile7.png";
+import profileImage from "../../assets/profile2.png";
 
 const About = () => {
   return (
@@ -23,31 +23,32 @@ const About = () => {
           {/* Skills Heading with Typing Effect */}
           <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight">
             <span className="text-white">I am a </span>
-            <ReactTypingEffect
-              text={[
-                "Fullstack Developer",
-                "Web App Creator",
-                "MERN Stack Developer",
-                "UI/UX Designer",
-                "Coder",
-              ]}
-              speed={100}
-              eraseSpeed={50}
-              typingDelay={500}
-              eraseDelay={2000}
-              cursorRenderer={(cursor) => (
-                <span className="text-[#8245ec]">{cursor}</span>
-              )}
-            />
+            <span>
+              <Typewriter
+                words={[
+                  "Full-Stack Developer",
+                  "MERN Stack Developer",
+                  "Web App Creator",
+                  "UI/UX Designer",
+                  "Coder",
+                ]}
+                loop={0}
+                cursor
+                cursorStyle="_"
+                typeSpeed={100}
+                deleteSpeed={50}
+                delaySpeed={2000}
+              />
+            </span>
           </h3>
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-            I’m a Full-Stack Developer skilled in the MERN stack and modern web
-            technologies. I’ve built projects like e-commerce platforms and
-            Airbnb-clone websites, focusing on clean, efficient code and
-            responsive, user-friendly interfaces. I enjoy turning ideas into
-            functional web applications and continuously exploring new tools and
-            technologies to deliver high-quality solutions.
+            I’m a Full-Stack Developer skilled in MERN stack and modern web
+            technologies. I’ve built real-world projects like e-commerce
+            platforms and Airbnb clones, focusing on clean code, responsive
+            designs, and seamless user experiences. I love turning ideas into
+            working web applications and continuously learning to deliver
+            practical, high-quality solutions.
           </p>
           {/* Resume Button */}
           <a
