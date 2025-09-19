@@ -38,15 +38,17 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw] ${
+      className={`fixed top-0 w-full z-50 transition duration-300 
+      px-[20px] md:px-[50px] lg:px-[100px]
+      ${
         isScrolled
           ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md"
           : "bg-transparent"
       }`}
     >
-      <div className="text-white py-5 flex justify-between items-center">
+      <div className="text-white py-4 flex justify-between items-center">
         {/* Logo */}
-        <div className="text-lg font-semibold cursor-pointer">
+        <div className="text-xl font-semibold cursor-pointer flex items-center space-x-1">
           <span className="text-[#8245ec]">&lt;</span>
           <span className="text-white">Sourabh</span>
           <span className="text-[#8245ec]">/</span>
@@ -55,11 +57,11 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-8 text-gray-300">
+        <ul className="hidden md:flex space-x-8 text-gray-300 text-lg">
           {menuItems.map((item) => (
             <li
               key={item.id}
-              className={`cursor-pointer hover:text-[#8245ec] ${
+              className={`cursor-pointer hover:text-[#8245ec] transition ${
                 activeSection === item.id ? "text-[#8245ec]" : ""
               }`}
             >
@@ -76,17 +78,17 @@ const Navbar = () => {
             href="https://github.com/sourabh7204"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-300 hover:text-[#8245ec]"
+            className="text-gray-300 hover:text-[#8245ec] transition"
           >
-            <FaGithub size={24} />
+            <FaGithub size={22} />
           </a>
           <a
             href="https://www.linkedin.com/in/sourabh7204"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-300 hover:text-[#8245ec]"
+            className="text-gray-300 hover:text-[#8245ec] transition"
           >
-            <FaLinkedin size={24} />
+            <FaLinkedin size={22} />
           </a>
         </div>
 
@@ -108,12 +110,12 @@ const Navbar = () => {
 
       {/* Mobile Menu Items */}
       {isOpen && (
-        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414] bg-opacity-50 backdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden">
-          <ul className="flex flex-col items-center space-y-4 py-4 text-gray-300">
+        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414] bg-opacity-90 backdrop-blur-md rounded-lg shadow-lg md:hidden">
+          <ul className="flex flex-col items-center space-y-5 py-6 text-gray-300 text-lg">
             {menuItems.map((item) => (
               <li
                 key={item.id}
-                className={`cursor-pointer hover:text-white ${
+                className={`cursor-pointer hover:text-[#8245ec] transition ${
                   activeSection === item.id ? "text-[#8245ec]" : ""
                 }`}
               >
@@ -122,22 +124,22 @@ const Navbar = () => {
                 </button>
               </li>
             ))}
-            <div className="flex space-x-4">
+            <div className="flex space-x-5 mt-4">
               <a
                 href="https://github.com/sourabh7204"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white"
+                className="text-gray-300 hover:text-[#8245ec] transition"
               >
-                <FaGithub size={24} />
+                <FaGithub size={22} />
               </a>
               <a
                 href="https://www.linkedin.com/in/sourabh7204"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white"
+                className="text-gray-300 hover:text-[#8245ec] transition"
               >
-                <FaLinkedin size={24} />
+                <FaLinkedin size={22} />
               </a>
             </div>
           </ul>
