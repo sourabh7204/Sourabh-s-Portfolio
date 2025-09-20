@@ -13,6 +13,7 @@ html {
 }
 
 @layer utilities {
+  /* Existing clip-paths */
   .clip-path-custom {
     clip-path: polygon(0 0, 100% 0, 100% 98%, 75% 95%, 0 100%);
   }
@@ -21,5 +22,20 @@ html {
   }
   .clip-path-custom-3 {
     clip-path: polygon(0 0, 100% 0, 100% 98%, 75% 96%, 0 100%);
+  }
+
+  /* New clip-path for Projects */
+  .clip-path-projects {
+    clip-path: polygon(0 0, 100% 0, 100% 97%, 70% 95%, 0 100%);
+  }
+
+  /* New clip-path for Contact */
+  .clip-path-contact {
+    clip-path: polygon(0 0, 100% 0, 100% 97%, 30% 95%, 0 100%);
+  }
+
+  /* New clip-path for Footer */
+  .clip-path-footer {
+    clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 100%);
   }
 }

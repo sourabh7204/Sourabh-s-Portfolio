@@ -13,9 +13,9 @@ const Footer = () => {
   return (
     <footer
       className="py-12 px-[8vw] md:px-[6vw] lg:px-[12vw] 
-                       bg-gray-100 dark:bg-gray-950 
-                       border-t border-gray-300 dark:border-gray-800 
-                       transition-colors duration-300"
+                 bg-skills-gradient dark:bg-gray-950 
+                 border-t border-gray-300 clip-path-footer dark:border-gray-800 
+                 transition-colors duration-300"
     >
       <div className="container mx-auto text-center flex flex-col items-center space-y-6">
         {/* Logo / Name */}
@@ -29,7 +29,7 @@ const Footer = () => {
             { name: "About", id: "about" },
             { name: "Skills", id: "skills" },
             { name: "Experience", id: "experience" },
-            { name: "Projects", id: "projects" },
+            { name: "Projects", id: "work" },
             { name: "Education", id: "education" },
           ].map((item, index) => (
             <button

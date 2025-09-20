@@ -43,8 +43,11 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col items-center justify-center py-24 px-[8vw] md:px-[6vw] lg:px-[18vw] 
-                 bg-gradient-to-b from-gray-50 to-white dark:from-gray-950 dark:to-black transition-colors duration-300"
+      className="flex flex-col items-center justify-center clip-path-contact py-24 px-[8vw] md:px-[6vw] lg:px-[18vw] 
+                 font-sans 
+                 bg-skills-gradient 
+                 dark:bg-gray-950 
+                 transition-colors duration-300"
     >
       {/* Toasts */}
       <ToastContainer />
@@ -64,9 +67,9 @@ const Contact = () => {
       {/* Contact Form Card */}
       <div
         className="w-full max-w-lg bg-white/80 dark:bg-gray-900/60 backdrop-blur-xl 
-                      p-8 rounded-2xl shadow-[0_0_30px_rgba(130,69,236,0.3)] 
-                      border border-gray-300 dark:border-gray-700 
-                      hover:border-purple-500 transition-all duration-300"
+                   p-8 rounded-2xl shadow-[0_0_30px_rgba(130,69,236,0.3)] 
+                   border border-gray-300 dark:border-gray-700 
+                   hover:border-purple-500 transition-all duration-300"
       >
         <h3 className="text-2xl font-semibold text-purple-600 dark:text-purple-400 text-center mb-6">
           Let’s Work Together
@@ -77,7 +80,6 @@ const Contact = () => {
           onSubmit={sendEmail}
           className="flex flex-col space-y-5"
         >
-          {/* Email */}
           <input
             type="email"
             name="user_email"
@@ -90,7 +92,6 @@ const Contact = () => {
                        focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
           />
 
-          {/* Name */}
           <input
             type="text"
             name="user_name"
@@ -103,7 +104,6 @@ const Contact = () => {
                        focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
           />
 
-          {/* Subject */}
           <input
             type="text"
             name="subject"
@@ -116,7 +116,6 @@ const Contact = () => {
                        focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
           />
 
-          {/* Message */}
           <textarea
             name="message"
             placeholder="Message"
@@ -129,7 +128,6 @@ const Contact = () => {
                        focus:outline-none focus:ring-2 focus:ring-purple-500 transition resize-none"
           />
 
-          {/* Submit Button */}
           <button
             type="submit"
             disabled={isSending}
