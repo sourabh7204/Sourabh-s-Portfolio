@@ -1,6 +1,6 @@
 // tailwind.config.js
 export default {
-  darkMode: "class", // Enable dark mode with class strategy
+  darkMode: "media", // Follows OS Prefrences
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
