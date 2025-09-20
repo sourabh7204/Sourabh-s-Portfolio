@@ -14,9 +14,11 @@ const Work = () => {
     >
       {/* Section Title */}
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-white">PROJECTS</h2>
+        <h2 className="text-4xl font-bold text-gray-900 dark:text-white">
+          PROJECTS
+        </h2>
         <div className="w-32 h-1 bg-purple-500 mx-auto mt-4 rounded"></div>
-        <p className="text-gray-400 mt-4 text-lg font-medium">
+        <p className="text-gray-700 dark:text-gray-400 mt-4 text-lg font-medium">
           A showcase of my projects highlighting my skills and experience.
         </p>
       </div>

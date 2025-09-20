@@ -9,9 +9,12 @@ const Skills = () => (
   >
     {/* Section Title */}
     <div className="text-center mb-8">
-      <h2 className="text-3xl sm:text-4xl font-bold text-white">SKILLS</h2>
-      <div className="w-24 h-1 bg-[#8245ec] mx-auto mt-2"></div>
-      <p className="text-gray-400 mt-4 text-lg font-semibold">
+      <h2 className="text-3xl sm:text-4xl font-bold mb-2 text-gray-900 dark:text-white">
+        SKILLS
+      </h2>
+      {/* Single underline */}
+      <div className="w-24 h-1 mx-auto mt-2 rounded-full bg-purple-600 dark:bg-[#8245ec]"></div>
+      <p className="mt-4 text-lg font-semibold text-gray-700 dark:text-gray-400">
         A collection of my technical skills and expertise honed through various
         projects and experiences
       </p>
@@ -25,11 +28,12 @@ const Skills = () => (
           className="bg-gray-900 backdrop-blur-md px-6 sm:px-10 py-8 sm:py-6 mb-10 w-full sm:w-[48%] rounded-2xl border border-white 
           shadow-[0_0_20px_1px_rgba(130,69,236,0.3)]"
         >
-          <h3 className="text-2xl sm:text-3xl font-semibold text-gray-400 mb-4 text-center">
+          {/* Category Title */}
+          <h3 className="text-2xl sm:text-3xl font-semibold mb-4 text-center text-white">
             {category.title}
           </h3>
 
-          {/* Skill Items - 3 per row on larger screens */}
+          {/* Skill Items - Cards kept same */}
           <Tilt
             key={category.title}
             tiltMaxAngleX={20}

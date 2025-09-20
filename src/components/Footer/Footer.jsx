@@ -11,10 +11,15 @@ const Footer = () => {
   };
 
   return (
-    <footer className="text-white py-12 px-[8vw] md:px-[6vw] lg:px-[12vw] bg-gray-950 border-t border-gray-800">
+    <footer
+      className="py-12 px-[8vw] md:px-[6vw] lg:px-[12vw] 
+                       bg-gray-100 dark:bg-gray-950 
+                       border-t border-gray-300 dark:border-gray-800 
+                       transition-colors duration-300"
+    >
       <div className="container mx-auto text-center flex flex-col items-center space-y-6">
         {/* Logo / Name */}
-        <h2 className="text-2xl font-bold text-purple-500 tracking-wide">
+        <h2 className="text-2xl font-bold text-purple-600 dark:text-purple-500 tracking-wide">
           Sourabh Vishwakarma
         </h2>
 
@@ -30,7 +35,7 @@ const Footer = () => {
             <button
               key={index}
               onClick={() => handleScroll(item.id)}
-              className="hover:text-purple-400 transition-colors duration-300"
+              className="hover:text-purple-600 dark:hover:text-purple-400 text-gray-700 dark:text-gray-300 transition-colors duration-300"
             >
               {item.name}
             </button>
@@ -58,7 +63,9 @@ const Footer = () => {
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-2xl text-gray-400 hover:text-purple-500 transform hover:scale-110 transition duration-300"
+              className="text-2xl text-gray-500 dark:text-gray-400 
+                         hover:text-purple-600 dark:hover:text-purple-400 
+                         transform hover:scale-110 transition duration-300"
             >
               {item.icon}
             </a>
@@ -66,9 +73,10 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="w-full border-t border-gray-800 pt-6">
-          <p className="text-xs sm:text-sm text-gray-500">
-            © {new Date().getFullYear()} Sourabh Vishwakarma. All rights
+        <div className="w-full border-t border-gray-300 dark:border-gray-800 pt-6">
+          <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+            © {new Date().getFullYear()}{" "}
+            <span className="font-medium">Sourabh Vishwakarma</span>. All rights
             reserved.
           </p>
         </div>

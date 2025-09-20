@@ -43,24 +43,32 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col items-center justify-center py-24 px-[8vw] md:px-[6vw] lg:px-[18vw] bg-gradient-to-b from-gray-950 to-black"
+      className="flex flex-col items-center justify-center py-24 px-[8vw] md:px-[6vw] lg:px-[18vw] 
+                 bg-gradient-to-b from-gray-50 to-white dark:from-gray-950 dark:to-black transition-colors duration-300"
     >
       {/* Toasts */}
       <ToastContainer />
 
       {/* Title */}
       <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold text-white">CONTACT</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white transition-colors duration-300">
+          CONTACT
+        </h2>
         <div className="w-32 h-1 bg-purple-500 mx-auto mt-4 rounded-full"></div>
-        <p className="text-gray-400 mt-4 text-lg font-medium max-w-xl mx-auto">
+        <p className="text-gray-600 dark:text-gray-400 mt-4 text-lg font-medium max-w-xl mx-auto">
           Let’s connect! Whether you have a question, an opportunity, or just
           want to say hi, drop me a message 🚀
         </p>
       </div>
 
       {/* Contact Form Card */}
-      <div className="w-full max-w-lg bg-gray-900/60 backdrop-blur-xl p-8 rounded-2xl shadow-[0_0_30px_rgba(130,69,236,0.3)] border border-gray-700 hover:border-purple-500 transition-all duration-300">
-        <h3 className="text-2xl font-semibold text-purple-400 text-center mb-6">
+      <div
+        className="w-full max-w-lg bg-white/80 dark:bg-gray-900/60 backdrop-blur-xl 
+                      p-8 rounded-2xl shadow-[0_0_30px_rgba(130,69,236,0.3)] 
+                      border border-gray-300 dark:border-gray-700 
+                      hover:border-purple-500 transition-all duration-300"
+      >
+        <h3 className="text-2xl font-semibold text-purple-600 dark:text-purple-400 text-center mb-6">
           Let’s Work Together
         </h3>
 
@@ -75,7 +83,11 @@ const Contact = () => {
             name="user_email"
             placeholder="Your Email"
             required
-            className="w-full p-3 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
+            className="w-full p-3 rounded-md 
+                       bg-gray-100 dark:bg-gray-800 
+                       text-gray-900 dark:text-white 
+                       border border-gray-300 dark:border-gray-700 
+                       focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
           />
 
           {/* Name */}
@@ -84,7 +96,11 @@ const Contact = () => {
             name="user_name"
             placeholder="Your Name"
             required
-            className="w-full p-3 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
+            className="w-full p-3 rounded-md 
+                       bg-gray-100 dark:bg-gray-800 
+                       text-gray-900 dark:text-white 
+                       border border-gray-300 dark:border-gray-700 
+                       focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
           />
 
           {/* Subject */}
@@ -93,7 +109,11 @@ const Contact = () => {
             name="subject"
             placeholder="Subject"
             required
-            className="w-full p-3 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
+            className="w-full p-3 rounded-md 
+                       bg-gray-100 dark:bg-gray-800 
+                       text-gray-900 dark:text-white 
+                       border border-gray-300 dark:border-gray-700 
+                       focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
           />
 
           {/* Message */}
@@ -102,17 +122,21 @@ const Contact = () => {
             placeholder="Message"
             rows="5"
             required
-            className="w-full p-3 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500 transition resize-none"
+            className="w-full p-3 rounded-md 
+                       bg-gray-100 dark:bg-gray-800 
+                       text-gray-900 dark:text-white 
+                       border border-gray-300 dark:border-gray-700 
+                       focus:outline-none focus:ring-2 focus:ring-purple-500 transition resize-none"
           />
 
           {/* Submit Button */}
           <button
             type="submit"
             disabled={isSending}
-            className={`w-full py-3 text-white font-semibold rounded-md transition-all duration-300 ${
+            className={`w-full py-3 font-semibold rounded-md transition-all duration-300 ${
               isSending
-                ? "bg-gray-600 cursor-not-allowed"
-                : "bg-gradient-to-r from-purple-600 to-pink-500 hover:opacity-90 shadow-lg hover:shadow-purple-600/40"
+                ? "bg-gray-400 dark:bg-gray-600 text-white cursor-not-allowed"
+                : "bg-gradient-to-r from-purple-600 to-pink-500 text-white hover:opacity-90 shadow-lg hover:shadow-purple-600/40"
             }`}
           >
             {isSending ? "Sending..." : "Send Message"}

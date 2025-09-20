@@ -1,7 +1,7 @@
 import React from "react";
 import { experiences } from "../../constants";
 
-// Reusable Card component
+// Reusable Card component (unchanged)
 const Card = ({ experience }) => (
   <div className="w-full p-4 sm:p-8 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transform transition-transform duration-300 hover:scale-105">
     <div className="flex items-center space-x-6">
@@ -49,9 +49,11 @@ const Experience = () => {
     >
       {/* Section Title */}
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-white">EXPERIENCE</h2>
-        <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
-        <p className="text-gray-400 mt-4 text-lg font-semibold">
+        <h2 className="text-4xl font-bold text-gray-900 dark:text-white">
+          EXPERIENCE
+        </h2>
+        <div className="w-32 h-1 mx-auto mt-4 rounded-full bg-purple-600 dark:bg-purple-500"></div>
+        <p className="mt-4 text-lg font-semibold text-gray-700 dark:text-gray-400">
           A collection of my work experience and the roles I have taken in
           various organizations
         </p>
