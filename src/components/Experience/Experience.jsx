@@ -1,11 +1,51 @@
 import React from "react";
-import { experiences } from "../../constants"; // Import your data
+import { experiences } from "../../constants";
+
+// Reusable Card component
+const Card = ({ experience }) => (
+  <div className="w-full p-4 sm:p-8 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transform transition-transform duration-300 hover:scale-105">
+    <div className="flex items-center space-x-6">
+      <div className="w-16 h-16 bg-white rounded-md overflow-hidden">
+        <img
+          src={experience.img}
+          alt={experience.company}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="flex flex-col justify-between">
+        <div>
+          <h3 className="text-xl sm:text-2xl font-semibold text-white">
+            {experience.role}
+          </h3>
+          <h4 className="text-md sm:text-sm text-gray-300">
+            {experience.company}
+          </h4>
+        </div>
+        <p className="text-sm text-gray-500 mt-2">{experience.date}</p>
+      </div>
+    </div>
+    <p className="mt-4 text-gray-400">{experience.desc}</p>
+    <div className="mt-4">
+      <h5 className="font-medium text-white">Skills:</h5>
+      <ul className="flex flex-wrap mt-2">
+        {experience.skills.map((skill, idx) => (
+          <li
+            key={idx}
+            className="bg-[#8245ec] text-gray-300 px-4 py-1 text-xs sm:text-sm rounded-lg mr-2 mb-2 border border-gray-400"
+          >
+            {skill}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+);
 
 const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-2"
+      className="py-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-2"
     >
       {/* Section Title */}
       <div className="text-center mb-16">
@@ -18,11 +58,10 @@ const Experience = () => {
       </div>
 
       {/* Experience Timeline */}
-      <div className="relative">
+      <div className="relative flex flex-col sm:flex-col items-center">
         {/* Vertical line */}
         <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gray-600 h-full hidden sm:block"></div>
 
-        {/* Experience Entries */}
         {experiences.map((experience, index) => (
           <div
             key={experience.id}
@@ -30,58 +69,18 @@ const Experience = () => {
               index % 2 === 1 ? "sm:flex-row-reverse" : ""
             }`}
           >
-            {/* Timeline Circle */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 sm:w-16 sm:h-16 bg-gray-400 border-4 border-[#8245ec] rounded-full flex items-center justify-center z-10 hidden sm:flex">
+            {/* Card */}
+            <div className="w-full sm:w-1/2 sm:px-4">
+              <Card experience={experience} />
+            </div>
+
+            {/* Timeline Circle (hidden on mobile) */}
+            <div className="hidden sm:flex w-16 h-16 bg-gray-400 border-4 border-[#8245ec] rounded-full flex items-center justify-center z-10 mx-8 sm:mx-0 sm:absolute left-1/2 transform -translate-x-1/2">
               <img
                 src={experience.img}
                 alt={experience.company}
                 className="w-full h-full object-cover rounded-full"
               />
-            </div>
-
-            {/* Content Card */}
-            <div
-              className={`w-full sm:w-1/2 p-4 sm:p-8 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transform transition-transform duration-300 hover:scale-105 ${
-                index % 2 === 0 ? "sm:mr-8" : "sm:ml-8"
-              }`}
-            >
-              <div className="flex items-center space-x-6">
-                <div className="w-16 h-16 bg-white rounded-md overflow-hidden">
-                  <img
-                    src={experience.img}
-                    alt={experience.company}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="flex flex-col justify-between">
-                  <div>
-                    <h3 className="text-xl sm:text-2xl font-semibold text-white">
-                      {experience.role}
-                    </h3>
-                    <h4 className="text-md sm:text-sm text-gray-300">
-                      {experience.company}
-                    </h4>
-                  </div>
-                  <p className="text-sm text-gray-500 mt-2">
-                    {experience.date}
-                  </p>
-                </div>
-              </div>
-
-              <p className="mt-4 text-gray-400">{experience.desc}</p>
-              <div className="mt-4">
-                <h5 className="font-medium text-white">Skills:</h5>
-                <ul className="flex flex-wrap mt-2">
-                  {experience.skills.map((skill, idx) => (
-                    <li
-                      key={idx}
-                      className="bg-[#8245ec] text-gray-300 px-4 py-1 text-xs sm:text-sm rounded-lg mr-2 mb-2 border border-gray-400"
-                    >
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
-              </div>
             </div>
           </div>
         ))}
