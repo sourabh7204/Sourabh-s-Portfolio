@@ -40,9 +40,9 @@ import mernLogo from "./assets/company_logo/mern1.png";
 import dsaLogo from "./assets/company_logo/dsa.png";
 
 // Education Section Logo's
-import glaLogo from "./assets/education_logo/gla_logo.png";
-import bsaLogo from "./assets/education_logo/bsa_logo.png";
-import vpsLogo from "./assets/education_logo/vps_logo.png";
+import hkbkLogo from "./assets/education_logo/hkbk.png";
+import ssvnLogo from "./assets/education_logo/ssvn.png";
+import florenceLogo from "./assets/education_logo/florence.png";
 
 // Project Section Logo's
 import spotifyLogo from "./assets/work_logo/spotify.png";
@@ -144,39 +144,30 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: glaLogo,
-    school: "GLA University, Mathura",
-    date: "Sept 2022 - July 2024",
-    grade: "7.81 CGPA",
-    desc: "I have completed my Master's degree (MCA) in Computer Applications from GLA University, Mathura. During my time at GLA, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at GLA University has been instrumental in shaping my technical abilities and professional growth.",
-    degree: "Master of Computer Applications - MCA",
+    img: hkbkLogo,
+    school: "HKBK College of Engineering, Bengaluru",
+    date: "Sep 2023 - Present",
+    grade: "7.6+ CGPA",
+    desc: "Currently pursuing 3rd-year B.Tech in Information Science Engineering. Learning advanced programming, data structures, algorithms, web development, and full-stack development with MERN stack. Actively involved in projects and hands-on applications to strengthen coding and software engineering skills.",
+    degree: "Bachelor of Technology - B.Tech (Information Science Engineering)",
   },
   {
     id: 1,
-    img: bsaLogo,
-    school: "BSA College, Mathura",
-    date: "Sept 2018 - Aug 2021",
-    grade: "73.2%",
-    desc: "I completed my Bachelor's degree in Computer Science (B.Sc.) from BSA College, Mathura. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems, I gained practical insights into the world of software development. My time at BSA College allowed me to work on projects that applied theoretical concepts to real-world problems.",
-    degree: "Bachelor of Science - BSC (Computer Science)",
+    img: ssvnLogo,
+    school: "State Board XII, PCM with Computer Science",
+    date: "Sep 2021 - Mar 2023",
+    grade: "81%",
+    desc: "Completed class 12 (State Board syllabus) with Physics, Chemistry, Mathematics, and Computer Science. Gained strong foundation in logical thinking, problem solving, and basic programming concepts, preparing for engineering studies.",
+    degree: "Pre-University - PCM with Computer Science",
   },
   {
     id: 2,
-    img: vpsLogo,
-    school: "Vatsalya Public School Govardhan, Mathura",
-    date: "Apr 2017 - March 2018",
-    grade: "78%",
-    desc: "I completed my class 12 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Physics, Chemistry, and Mathematics (PCM) with Computer Science.",
-    degree: "CBSE(XII) - PCM with Computer Science",
-  },
-  {
-    id: 3,
-    img: vpsLogo,
-    school: "Vatsalya Public School Govardhan, Mathura",
-    date: "Apr 2015 - March 2016",
-    grade: "87.5%",
-    desc: "I completed my class 10 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Science with Computer.",
-    degree: "CBSE(X), Science with Computer Application",
+    img: florenceLogo,
+    school: "State Board X",
+    date: "Jul 2020 - Apr 2021",
+    grade: "71%",
+    desc: "Completed class 10 (State Board syllabus) with focus on Science, Mathematics, and other core subjects. Built the foundation for analytical thinking and problem-solving skills for later studies in PCM and engineering.",
+    degree: "Secondary School",
   },
 ];
 
