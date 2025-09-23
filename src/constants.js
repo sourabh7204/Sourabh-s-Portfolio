@@ -204,7 +204,7 @@ export const projects = [
       "TypeScript",
       "eCommerce",
     ],
-    github: "https://github.com/sourabh7204/shopcart-mern-ts",
+    github: "https://github.com/sourabh7204/shopcart-eCommerce-Website",
     webapp: "", // Not deployed yet
   },
   {
