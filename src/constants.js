@@ -195,7 +195,7 @@ export const projects = [
     title: "ShopCart MERN (Ongoing)",
     description:
       "A MERN stack eCommerce website built with TypeScript. Includes product listings, cart, and checkout features. Currently under development.",
-    image: shopcartLogo, // Import a logo or screenshot
+    image: shopcartLogo,
     tags: [
       "MongoDB",
       "Express",
