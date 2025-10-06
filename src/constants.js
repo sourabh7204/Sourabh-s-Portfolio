@@ -52,6 +52,7 @@ import ieltsLanding from "./assets/work_logo/ieltsLanding.png";
 
 export const SkillsInfo = [
   {
+    //Skills
     title: "Frontend",
     skills: [
       { name: "HTML", logo: htmlLogo },
