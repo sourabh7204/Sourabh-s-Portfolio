@@ -48,7 +48,7 @@ import florenceLogo from "./assets/education_logo/florence.png";
 import spotifyLogo from "./assets/work_logo/spotify.png";
 import airbnbLogo from "./assets/work_logo/airbnb1.png";
 import shopcartLogo from "./assets/work_logo/shopcart.png";
-import ieltsLanding from "../assets/ieltsLanding.png";
+import ieltsLanding from "../assets/work_logo/ieltsLanding.png";
 
 export const SkillsInfo = [
   {
