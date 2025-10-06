@@ -48,6 +48,7 @@ import florenceLogo from "./assets/education_logo/florence.png";
 import spotifyLogo from "./assets/work_logo/spotify.png";
 import airbnbLogo from "./assets/work_logo/airbnb1.png";
 import shopcartLogo from "./assets/work_logo/shopcart.png";
+import ieltsLanding from "../assets/ieltsLanding.png";
 
 export const SkillsInfo = [
   {
@@ -212,9 +213,19 @@ export const projects = [
     title: "Spotify Clone (Practice Project)",
     description:
       "A front-end Spotify clone built with HTML and CSS for practice and learning purposes.",
-    image: spotifyLogo, // Import or add a screenshot
+    image: spotifyLogo,
     tags: ["HTML", "CSS", "UI/UX"],
     github: "https://github.com/sourabh7204/Spotify-Clone",
-    webapp: "", // Not deployed
+    webapp: "https://spotify-clone-el94.vercel.app/",
+  },
+  {
+    id: 2,
+    title: "IELTS Institute Landing Page",
+    description:
+      "A modern and responsive landing page for an IELTS coaching institute built using React, Tailwind CSS, and Vite. Designed with a focus on professional UI and smooth user experience during my internship project.",
+    image: ieltsLanding,
+    tags: ["React", "Tailwind CSS", "Vite", "Frontend"],
+    github: "https://github.com/sourabh7204/ielts-institute-landing",
+    webapp: "https://ielts-institute-landing.vercel.app/",
   },
 ];
