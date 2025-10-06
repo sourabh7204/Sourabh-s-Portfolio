@@ -173,6 +173,7 @@ export const education = [
 ];
 
 export const projects = [
+  //Airbnb Full-Stack Project
   {
     id: 0,
     title: "Airbnb Full-Stack Project",
@@ -191,6 +192,7 @@ export const projects = [
     github: "https://github.com/sourabh7204/Airbnb_FullStack_Project",
     webapp: "https://airbnb-project-qk0s.onrender.com/listings",
   },
+  //ShopCart eCommerce Website
   {
     id: 1,
     title: "ShopCart MERN (Ongoing)",
@@ -208,6 +210,7 @@ export const projects = [
     github: "https://github.com/sourabh7204/shopcart-eCommerce-Website",
     webapp: "", // Not deployed yet
   },
+  //Spotify Clone
   {
     id: 2,
     title: "Spotify Clone (Practice Project)",
@@ -218,6 +221,7 @@ export const projects = [
     github: "https://github.com/sourabh7204/Spotify-Clone",
     webapp: "https://spotify-clone-el94.vercel.app/",
   },
+  //IELTS Landing Page
   {
     id: 2,
     title: "IELTS Institute Landing Page",
