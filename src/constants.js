@@ -224,7 +224,7 @@ export const projects = [
   },
   //IELTS Landing Page
   {
-    id: 2,
+    id: 3,
     title: "IELTS Institute Landing Page",
     description:
       "A modern and responsive landing page for an IELTS coaching institute built using React, Tailwind CSS, and Vite. Designed with a focus on professional UI and smooth user experience during my internship project.",
