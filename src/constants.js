@@ -149,8 +149,8 @@ export const education = [
     img: hkbkLogo,
     school: "HKBK College of Engineering, Bengaluru",
     date: "Sep 2023 - Present",
-    grade: "7.6+ CGPA",
-    desc: "Currently pursuing 3rd-year B.Tech in Information Science Engineering. Learning advanced programming, data structures, algorithms, web development, and full-stack development with MERN stack. Actively involved in projects and hands-on applications to strengthen coding and software engineering skills.",
+    grade: "7+ CGPA",
+    desc: "Currently in my third year of B.Tech in Information Science Engineering. I am learning programming, data structures, algorithms, web development, and full-stack development with the MERN stack. I am actively involved in projects and hands-on applications to strengthen my coding and software engineering skills.",
     degree: "Bachelor of Technology - B.Tech (Information Science Engineering)",
   },
   {
@@ -193,24 +193,7 @@ export const projects = [
     github: "https://github.com/sourabh7204/Airbnb_FullStack_Project",
     webapp: "https://airbnb-project-qk0s.onrender.com/listings",
   },
-  //ShopCart eCommerce Website
-  {
-    id: 1,
-    title: "ShopCart MERN (Ongoing)",
-    description:
-      "A MERN stack eCommerce website built with TypeScript. Includes product listings, cart, and checkout features. Currently under development.",
-    image: shopcartLogo,
-    tags: [
-      "MongoDB",
-      "Express",
-      "React JS",
-      "Node.js",
-      "TypeScript",
-      "eCommerce",
-    ],
-    github: "https://github.com/sourabh7204/shopcart-eCommerce-Website",
-    webapp: "", // Not deployed yet
-  },
+
   //Spotify Clone
   {
     id: 2,

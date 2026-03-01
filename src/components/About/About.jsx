@@ -1,7 +1,7 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import Tilt from "react-parallax-tilt";
-import profileImage from "../../assets/profile2.png";
+import profileImage from "../../assets/profileImg3.png";
 
 const About = () => {
   return (
